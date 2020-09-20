@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jianing.imes.warehouse.mapper.OutWarehouseMapper">
+  <resultMap id="BaseResultMap" type="cn.jianing.imes.domain.warehouse.OutWarehouse">
+    <!--@mbg.generated generated on Sat Sep 19 15:55:38 CST 2020.-->
+    <!--@Table wh_out_warehouse-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="company_id" jdbcType="VARCHAR" property="companyId" />
+    <result column="purpose" jdbcType="VARCHAR" property="purpose" />
+    <result column="recipients_unit" jdbcType="VARCHAR" property="recipientsUnit" />
+    <result column="recipient" jdbcType="VARCHAR" property="recipient" />
+    <result column="recipients_time" jdbcType="TIMESTAMP" property="recipientsTime" />
+    <result column="is_deleted" jdbcType="TINYINT" property="isDeleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Sat Sep 19 15:55:38 CST 2020.-->
+    id, company_id, purpose, recipients_unit, recipient, recipients_time, is_deleted
+  </sql>
+</mapper>

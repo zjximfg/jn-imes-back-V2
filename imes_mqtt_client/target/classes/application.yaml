@@ -1,0 +1,40 @@
+server:
+  port: 10001
+
+spring:
+  application:
+#    name: imes-mqtt-client-service-10001
+    name: imes-mqtt-client-service-10001-local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jn-imes?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+    username: root
+#    password: 123456Zjx!
+    password: 123456
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+mqtt:
+  server:
+    host: 182.92.194.48
+    port: 1883
+    topic-publish: jn-imes/publish/
+    topic-subscribe: jn-imes/subscribe/
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+logging:
+  level:
+    cn.jianing.imes.mqtt.mapper: debug
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/

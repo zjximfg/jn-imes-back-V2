@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jianing.imes.warehouse.mapper.OutWarehouseRebarMemberMapper">
+  <resultMap id="BaseResultMap" type="cn.jianing.imes.domain.warehouse.OutWarehouseRebarMember">
+    <!--@mbg.generated generated on Sat Sep 19 15:58:21 CST 2020.-->
+    <!--@Table wh_out_warehouse_rebar_member-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="out_warehouse_rebar_id" jdbcType="VARCHAR" property="outWarehouseRebarId" />
+    <result column="rebar_member_storage_id" jdbcType="VARCHAR" property="rebarMemberStorageId" />
+    <result column="rebar_storage_id" jdbcType="VARCHAR" property="rebarStorageId" />
+    <result column="rebar_index" jdbcType="INTEGER" property="rebarIndex" />
+    <result column="out_quantity" jdbcType="INTEGER" property="outQuantity" />
+    <result column="out_theoretical_weight" jdbcType="DECIMAL" property="outTheoreticalWeight" />
+    <result column="unit_theoretical_weight" jdbcType="DECIMAL" property="unitTheoreticalWeight" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Sat Sep 19 15:58:21 CST 2020.-->
+    id, out_warehouse_rebar_id, rebar_member_storage_id, rebar_storage_id, rebar_index, 
+    out_quantity, out_theoretical_weight, unit_theoretical_weight
+  </sql>
+</mapper>

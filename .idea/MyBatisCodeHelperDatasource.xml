@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="cn.jianing.imes.warehouse.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/imes_warehouse/src/main/java" />
+        <option name="javaModelPackage" value="cn.jianing.imes.domain.warehouse" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/imes_common_model/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="imes_warehouse" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="imes_warehouse">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="cn.jianing.imes.warehouse.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/imes_warehouse/src/main/java" />
+                  <option name="javaModelPacakge" value="cn.jianing.imes.domain.warehouse" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/imes_common_model/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="cn.jianing.imes.warehouse.service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/imes_warehouse/src/main/java" />
+                  <option name="javaServicePackage" value="cn.jianing.imes.warehouse.service.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/imes_warehouse/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/imes_warehouse/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="p3CComment" value="true" />
+        <option name="removeTablePreName" value="wh" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="jn-imes:wh_out_warehouse">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="OutWarehouse" />
+                  <option name="moduleName" value="imes_warehouse" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="jn-imes:wh_out_warehouse_rebar">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="OutWarehouseRebar" />
+                  <option name="moduleName" value="imes_warehouse" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="jn-imes:wh_out_warehouse_rebar_member">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="OutWarehouseRebarMember" />
+                  <option name="moduleName" value="imes_warehouse" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="jn-imes:wh_outwarehouse_rebar">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="" />
+                  <option name="javaModelName" value="OutwarehouseRebar" />
+                  <option name="moduleName" value="imes_warehouse" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="useCommonMapper" value="true" />
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/imes_warehouse/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

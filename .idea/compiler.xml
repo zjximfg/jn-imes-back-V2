@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="imes_common" />
+        <module name="imes_warehouse" />
+        <module name="imes_device" />
+        <module name="imes_mqtt_client" />
+        <module name="imes_project" />
+        <module name="imes_system" />
+        <module name="imes_company" />
+        <module name="imes_common_model" />
+        <module name="imes_eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="imes_influx" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="imes_common" options="-parameters" />
+      <module name="imes_common_model" options="-parameters" />
+      <module name="imes_company" options="-parameters" />
+      <module name="imes_device" options="-parameters" />
+      <module name="imes_eureka" options="-parameters" />
+      <module name="imes_influx" options="-parameters" />
+      <module name="imes_mqtt_client" options="-parameters" />
+      <module name="imes_project" options="-parameters" />
+      <module name="imes_system" options="-parameters" />
+      <module name="imes_warehouse" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jianing.imes.warehouse.mapper.OutWarehouseRebarMapper">
+  <resultMap id="BaseResultMap" type="cn.jianing.imes.domain.warehouse.OutWarehouseRebar">
+    <!--@mbg.generated generated on Sat Sep 19 16:17:35 CST 2020.-->
+    <!--@Table wh_out_warehouse_rebar-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="out_warehouse_id" jdbcType="VARCHAR" property="outWarehouseId" />
+    <result column="warehouse_storage_id" jdbcType="VARCHAR" property="warehouseStorageId" />
+    <result column="rebar_storage_id" jdbcType="VARCHAR" property="rebarStorageId" />
+    <result column="rebar_category" jdbcType="INTEGER" property="rebarCategory" />
+    <result column="specification" jdbcType="VARCHAR" property="specification" />
+    <result column="diameter" jdbcType="INTEGER" property="diameter" />
+    <result column="length" jdbcType="INTEGER" property="length" />
+    <result column="batch_number" jdbcType="VARCHAR" property="batchNumber" />
+    <result column="device_name" jdbcType="VARCHAR" property="deviceName" />
+    <result column="outbound_quantity" jdbcType="INTEGER" property="outboundQuantity" />
+    <result column="outbound_quantity_unit" jdbcType="VARCHAR" property="outboundQuantityUnit" />
+    <result column="outbound_theoretical_weight" jdbcType="DECIMAL" property="outboundTheoreticalWeight" />
+    <result column="outbound_actual_weight" jdbcType="DECIMAL" property="outboundActualWeight" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Sat Sep 19 16:17:35 CST 2020.-->
+    id, out_warehouse_id, warehouse_storage_id, rebar_storage_id, rebar_category, specification, 
+    diameter, `length`, batch_number, device_name, outbound_quantity, outbound_quantity_unit, 
+    outbound_theoretical_weight, outbound_actual_weight
+  </sql>
+</mapper>
