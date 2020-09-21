@@ -6,6 +6,7 @@ import cn.jianing.imes.domain.warehouse.WarehouseStorage;
 import com.github.pagehelper.Page;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -15,4 +16,6 @@ public interface WarehouseStorageService {
     boolean insertWarehouseStorage(WarehouseEntry warehouseEntry, RebarEntry rebarEntry);
 
     WarehouseStorage getWarehouseStorageById(String id);
+
+    List<WarehouseStorage> queryWarehouseStorageByCondition(Map<String, Object> conditions);
 }

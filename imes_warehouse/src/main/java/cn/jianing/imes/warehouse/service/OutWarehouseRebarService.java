@@ -14,9 +14,9 @@ public interface OutWarehouseRebarService{
 
     OutWarehouseRebar getOutWarehouseRebarById(String id);
 
-    List<String> querySpecificationListInWarehouseStorages(Map<String, Object> map, String companyId);
+    List<String> querySpecificationListInWarehouseStorage(Map<String, Object> map, String companyId);
 
-    List<Integer> queryDiameterListInWarehouseStorages(Map<String, Object> map, String companyId);
+    List<Integer> queryDiameterListInWarehouseStorage(Map<String, Object> map, String companyId);
 
-    List<Integer> queryLengthListInWarehouseStorages(Map<String, Object> map, String companyId);
+    List<Integer> queryLengthListInWarehouseStorage(Map<String, Object> map, String companyId);
 }

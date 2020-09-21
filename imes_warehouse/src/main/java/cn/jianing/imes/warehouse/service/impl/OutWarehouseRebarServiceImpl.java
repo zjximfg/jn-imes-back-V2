@@ -58,7 +58,7 @@ public class OutWarehouseRebarServiceImpl implements OutWarehouseRebarService {
     }
 
     @Override
-    public List<String> querySpecificationListInWarehouseStorages(Map<String, Object> map, String companyId) {
+    public List<String> querySpecificationListInWarehouseStorage(Map<String, Object> map, String companyId) {
         Example example = new Example(WarehouseStorage.class);
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("companyId", companyId);
@@ -81,7 +81,7 @@ public class OutWarehouseRebarServiceImpl implements OutWarehouseRebarService {
     }
 
     @Override
-    public List<Integer> queryDiameterListInWarehouseStorages(Map<String, Object> map, String companyId) {
+    public List<Integer> queryDiameterListInWarehouseStorage(Map<String, Object> map, String companyId) {
         Example example = new Example(WarehouseStorage.class);
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("companyId", companyId);
@@ -101,7 +101,7 @@ public class OutWarehouseRebarServiceImpl implements OutWarehouseRebarService {
     }
 
     @Override
-    public List<Integer> queryLengthListInWarehouseStorages(Map<String, Object> map, String companyId) {
+    public List<Integer> queryLengthListInWarehouseStorage(Map<String, Object> map, String companyId) {
         Example example = new Example(WarehouseStorage.class);
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("companyId", companyId);

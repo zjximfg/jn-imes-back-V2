@@ -99,4 +99,14 @@ public class WarehouseStorageServiceImpl implements WarehouseStorageService {
     public WarehouseStorage getWarehouseStorageById(String id) {
         return warehouseStorageMapper.selectByPrimaryKey(id);
     }
+
+    @Override
+    public List<WarehouseStorage> queryWarehouseStorageByCondition(Map<String, Object> conditions) {
+        Example example = new Example(WarehouseStorage.class);
+        Example.Criteria criteria = example.createCriteria();
+        for (Map.Entry<String, Object> entry : conditions.entrySet()) {
+            criteria.andEqualTo(entry.getKey(), entry.getValue());
+        }
+        return warehouseStorageMapper.selectByExample(example);
+    }
 }
